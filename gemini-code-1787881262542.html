@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Menu Sigma Style</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="menu-container">
+    <div class="sidebar">
+      <h2>SIGMA MENU</h2>
+      <button class="tab-btn active" onclick="openTab(event, 'tab1')">Principal</button>
+      <button class="tab-btn" onclick="openTab(event, 'tab2')">Opções</button>
+      <button class="tab-btn" onclick="openTab(event, 'tab3')">Configurações</button>
+    </div>
+
+    <div class="content">
+      <div id="tab1" class="tab-content active">
+        <h3>Menu Principal</h3>
+        <p>Bem-vindo ao painel.</p>
+      </div>
+
+      <div id="tab2" class="tab-content">
+        <h3>Opções de Funções</h3>
+        <label class="switch">
+          <input type="checkbox"> Ativar Recurso A
+        </label>
+      </div>
+
+      <div id="tab3" class="tab-content">
+        <h3>Configurações</h3>
+        <p>Ajustes do menu.</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
